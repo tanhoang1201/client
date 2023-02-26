@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-primary text-[#333];
+		overflow-y: overlay;
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto max-w-[1232px] px-4;
+	}
+
+	.text-shadow {
+		text-shadow: 2px 2px 10px #000;
+	}
+}
+
+.mySwiper {
+	@apply mb-8;
+
+	.swiper-pagination-bullets-dynamic {
+		// @apply bg-white;
+
+		.swiper-pagination-bullet {
+			background-color: white;
+		}
+
+		.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+			background-color: white;
+		}
+	}
+}
+
+.new-slide {
+	@apply mb-7 pb-2;
+}
+
+.swiper-slide {
+	@apply h-auto;
+}
